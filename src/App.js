@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import Home from "./components/Home";
+import Cat from "./components/Cat";
+import Dog from "./components/Dog";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import "./styles/App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ParallaxProvider>
+      <div className="app-container">
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/cat" element={<Cat />} />
+            <Route path="/dog" element={<Dog />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <div className="parallax-section">
+          <Parallax y={[-10, 10]} tagOuter="figure">
+            <Cat />
+            <Dog />
+            <Contact />
+            <Footer />
+          </Parallax>
+        </div>
+      </div>
+    </ParallaxProvider>
   );
 }
 
