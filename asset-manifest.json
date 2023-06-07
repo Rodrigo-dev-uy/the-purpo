@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/pride-petsy/static/css/main.31d6cfe0.css",
-    "main.js": "/pride-petsy/static/js/main.910ae005.js",
+    "main.js": "/pride-petsy/static/js/main.46fe7e4d.js",
     "index.html": "/pride-petsy/index.html",
-    "main.910ae005.js.map": "/pride-petsy/static/js/main.910ae005.js.map"
+    "main.46fe7e4d.js.map": "/pride-petsy/static/js/main.46fe7e4d.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.910ae005.js"
+    "static/js/main.46fe7e4d.js"
   ]
 }
