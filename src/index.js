@@ -13,7 +13,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/pride-petsy" element={<App />} />
         <Route path="/home" element={<Home />} />
         <Route path="/dog" element={<Dog />} />
         <Route path="/cat" element={<Cat />} />
