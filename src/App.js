@@ -1,35 +1,31 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
-import Home from "./components/Home";
-import Cat from "./components/Cat";
-import Dog from "./components/Dog";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import "./styles/App.css";
+
+import Layout from "./components/Layout";
+
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Products from "./pages/Products";
+import SearchResults from "./pages/SearchResults";
+import NotFound from "./pages/NotFount";
+import Footer from "./pages/Footer";
 
 function App() {
   return (
-    <ParallaxProvider>
-      <div className="app-container">
-        <div className="content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/cat" element={<Cat />} />
-            <Route path="/dog" element={<Dog />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </div>
-        <div className="parallax-section">
-          <Parallax y={[-10, 10]} tagOuter="figure">
-            <Cat />
-            <Dog />
-            <Contact />
-            <Footer />
-          </Parallax>
-        </div>
-      </div>
-    </ParallaxProvider>
+    <Routes>
+      <Route path="/pride-petsy" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="products/*" element={<Products />} />
+        <Route path="search" element={<SearchResults />} />
+      </Route>
+      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<Footer />} />
+
+      {/* <Route path="/account" element={<AccountLayout />}>
+        <Route path="profile" element={<Profile />} />
+        <Route path="edit" element={<ProfileEdit />} />
+      </Route> */}
+    </Routes>
   );
 }
 
