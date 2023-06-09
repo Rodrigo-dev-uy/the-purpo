@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/the-purpo/static/css/main.8846f963.css",
-    "main.js": "/the-purpo/static/js/main.f304db0b.js",
+    "main.css": "/the-purpo/static/css/main.eb66b990.css",
+    "main.js": "/the-purpo/static/js/main.51d74d8f.js",
     "index.html": "/the-purpo/index.html",
-    "main.8846f963.css.map": "/the-purpo/static/css/main.8846f963.css.map",
-    "main.f304db0b.js.map": "/the-purpo/static/js/main.f304db0b.js.map"
+    "main.eb66b990.css.map": "/the-purpo/static/css/main.eb66b990.css.map",
+    "main.51d74d8f.js.map": "/the-purpo/static/js/main.51d74d8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.8846f963.css",
-    "static/js/main.f304db0b.js"
+    "static/css/main.eb66b990.css",
+    "static/js/main.51d74d8f.js"
   ]
 }
