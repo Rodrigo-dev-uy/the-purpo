@@ -12,7 +12,7 @@ import Footer from "./pages/Footer";
 function App() {
   return (
     <Routes>
-      <Route path="/pride-petsy" element={<Layout />}>
+      <Route path="/the-purpo" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="products/*" element={<Products />} />

@@ -1,0 +1,30 @@
+.container {
+  box-sizing: border-box;
+  background: black;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-family: "Kablammo", cursive;
+  font-family: "Roboto Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 20px;
+  margin: 0;
+  background: linear-gradient(to right, #ffffff, #6dd5fa, #2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text 5s linear infinite;
+}
+
+@keyframes text {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
