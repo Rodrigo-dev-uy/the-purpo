@@ -22,7 +22,7 @@ const ProductDetail = () => {
           <img src={product.thumbnail} alt={product.title} width="200" />
           <p>Category: {product.category}</p>
           <p>Description: {product.description}</p>
-          <Link to="/products">Back to products page</Link>
+          <Link to="/the-purpo/products">Back to products page</Link>
         </>
       )}
     </>

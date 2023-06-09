@@ -1,12 +1,49 @@
+#nav-content {
+  background: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 00.6);
+}
+.style-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 5px;
+}
+.cart-icon svg {
+  color: black;
+}
+
+.style-nav .a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3dd1e7;
+  transition: 0.3s ease;
+}
+.style-nav .a:hover {
+  color: #424646;
+}
+.a.active {
+  position: relative;
+}
+
+.a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 40%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: #3dd1e7;
+}
+
 .button-53 {
   background-color: #3dd1e7;
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
   color: #000000;
   display: flex;
-
   font-family: "Kablammo", cursive;
-
   font-size: 1rem;
   font-weight: 700;
   justify-content: center;
@@ -25,6 +62,7 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-left: 10px;
 }
 
 .button-53:focus {

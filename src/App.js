@@ -4,10 +4,12 @@ import Layout from "./components/Layout";
 
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
+import ProductsDetail from "./components/ProductsDetail";
 import Products from "./pages/Products";
-import SearchResults from "./pages/SearchResults";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFount";
 import Footer from "./pages/Footer";
+import Cart from "./pages/CartHtml";
 
 function App() {
   return (
@@ -16,15 +18,12 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<AboutUs />} />
         <Route path="products/*" element={<Products />} />
-        <Route path="search" element={<SearchResults />} />
+        <Route path="products/:productId" element={<ProductsDetail />} />{" "}
+        <Route path="contact" element={<Contact />} />
+        <Route path="cart" element={<Cart />} />
       </Route>
       <Route path="*" element={<NotFound />} />
       <Route path="*" element={<Footer />} />
-
-      {/* <Route path="/account" element={<AccountLayout />}>
-        <Route path="profile" element={<Profile />} />
-        <Route path="edit" element={<ProfileEdit />} />
-      </Route> */}
     </Routes>
   );
 }

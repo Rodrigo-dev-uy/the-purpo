@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Axios from "axios";
-
+import "../styles/Products.css";
 import ProductsList from "../components/ProductList";
-import ProductDetail from "../components/ProductsDetail";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -19,7 +18,6 @@ const Products = () => {
       <h4>Products Page</h4>
       <Routes>
         <Route index element={<ProductsList products={products} />} />
-        <Route path=":productId" element={<ProductDetail />} />
       </Routes>
     </>
   );

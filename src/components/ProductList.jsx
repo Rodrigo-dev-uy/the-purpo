@@ -7,7 +7,9 @@ const ProductsList = ({ products }) => {
         return (
           <li key={product.id}>
             <strong>{product.title}</strong>{" "}
-            <Link to={`/products/${product.id}`}>[more details +]</Link>
+            <Link to={`/the-purpo/products/${product.id}`}>
+              [more details +]
+            </Link>
           </li>
         );
       })}
